@@ -1,0 +1,24 @@
+-- function to reset a specific storage value for a player
+local function releaseStorage(player)
+    -- ensure input is valid
+    if not player then
+        print("Invalid player, can't release storage.")
+        return
+    end
+    player:setStorageValue(1000, -1)
+end
+
+local addEvent = require("addEvent") -- import the missing addEvent function
+
+-- make onLogout a local function
+local function onLogout(player)
+    -- ensure input is valid
+    if not player then
+        print("Invalid player object on logout.")
+        return false
+    end
+    if player:getStorageValue(1000) == 1 then
+        addEvent(releaseStorage, 1000, player)
+    end
+    return true
+end

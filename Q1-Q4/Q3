@@ -1,0 +1,27 @@
+local function removePlayerFromParty(playerId, memberName) -- rename function removePlayerFromParty and make local
+    -- make sure player ID and member name are valid
+    if not playerId or not memberName then
+        error("Invalid player ID or member name provided.")
+    end
+
+    local player = Player(playerId)
+    -- make sure player exists
+    if not player then
+        error("Player does not exist")
+    end
+
+    local party = player:getParty()
+    -- make sure player is in a party
+    if not party then
+        print("Player does not belong to a party.")
+        return
+    end
+
+    for key, value in pairs(party:getMembers()) do
+        if value == Player(memberName) then
+            party:removeMember(Player(memberName))
+            print("Removed", memberName) -- print statement to confirm proper removal
+            return                       -- add an exit after removing to prevent repeating operations
+        end
+    end
+end

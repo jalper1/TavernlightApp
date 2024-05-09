@@ -1,0 +1,30 @@
+local function printSmallGuildNames(memberCount) -- make printSmallGuildNames local
+    -- this method is supposed to print names of all guilds that have less than memberCount max members
+    -- check to make sure memberCount is a number and is greater than 0
+    if type(memberCount) ~= "number" or memberCount <= 0 then
+        print("Invalid member count please use a positive number.")
+        return
+    end
+
+    -- query to select guilds with less than memberCount max members
+    local selectGuildQuery = "SELECT name FROM guilds WHERE max_members < %d;"
+    local formattedQuery = string.format(selectGuildQuery, memberCount) -- seperate the query and the formatting
+    local resultId = db.storeQuery(formattedQuery)
+
+    -- check that there are guilds with max members less than memberCount
+    if not resultId then
+        print("No guilds found.")
+        return
+    end
+
+    -- print the names of the guilds with max members less than memberCount
+    repeat
+        local guildName = db.getString(resultId, "name")
+        if guildName then
+            print(guildName)
+        end
+    until db.next(resultId) == false
+
+    -- free the resources used by the query
+    db.free(resultId)
+end
