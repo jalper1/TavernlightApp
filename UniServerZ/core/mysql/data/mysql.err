@@ -1,0 +1,23 @@
+2024-05-10T01:06:38.552175Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2024-05-10T01:06:38.730309Z 0 [System] [MY-010116] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.2.0) starting as process 25688
+2024-05-10T01:06:38.803067Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 8df8e21e-0e69-11ef-9218-9405bb175adf.
+2024-05-10T01:06:38.811307Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-05-10T01:06:39.350983Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-05-10T01:06:40.385132Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-05-10T01:06:40.385878Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-05-10T01:06:40.610600Z 0 [System] [MY-010931] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.2.0'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-05-10T01:06:40.610592Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-05-10T01:06:50.488935Z 0 [System] [MY-015015] [Server] MySQL Server - start.
+2024-05-10T01:06:50.654653Z 0 [System] [MY-010116] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe (mysqld 8.2.0) starting as process 18296
+2024-05-10T01:06:50.686674Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+2024-05-10T01:06:51.605613Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+2024-05-10T01:06:51.969248Z 0 [System] [MY-010229] [Server] Starting XA crash recovery...
+2024-05-10T01:06:51.974800Z 0 [System] [MY-010232] [Server] XA crash recovery finished.
+2024-05-10T01:06:52.049446Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2024-05-10T01:06:52.049823Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+2024-05-10T01:06:52.104397Z 0 [System] [MY-010931] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe: ready for connections. Version: '8.2.0'  socket: ''  port: 3306  MySQL Community Server - GPL.
+2024-05-10T01:06:52.104422Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060
+2024-05-10T01:28:41.832756Z 158 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.2.0).
+2024-05-10T01:28:41.833419Z 0 [System] [MY-013105] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe: Normal shutdown.
+2024-05-10T01:28:42.322427Z 0 [System] [MY-010910] [Server] C:\Users\alper\Desktop\Things\TavernlightApp\UniServerZ\core\mysql\bin\mysqld_z.exe: Shutdown complete (mysqld 8.2.0)  MySQL Community Server - GPL.
+2024-05-10T01:28:42.323939Z 0 [System] [MY-015016] [Server] MySQL Server - end.
